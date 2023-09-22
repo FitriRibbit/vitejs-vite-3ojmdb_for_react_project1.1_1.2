@@ -16,6 +16,30 @@ const DisplayB = (props) => (
   </div>
 );
 
+const DisplayAll = (props) => (
+  <div>
+    <p>all {props.good + props.neutral + props.bad} </p>
+  </div>
+);
+
+const DisplayAvg = (props) => (
+  <div>
+    <p>
+      average{' '}
+      {(props.good * 1 + props.bad * -1) /
+        (props.good + props.neutral + props.bad)}{' '}
+    </p>
+  </div>
+);
+
+const DisplayPos = (props) => (
+  <div>
+    <p>
+      positive {(props.good / (props.good + props.neutral + props.bad)) * 100} %
+    </p>
+  </div>
+);
+
 const Button = (props) => (
   <button onClick={props.handleClick}>{props.text}</button>
 );
@@ -55,6 +79,9 @@ const App = () => {
       <DisplayG good={good} />
       <DisplayN neutral={neutral} />
       <DisplayB bad={bad} />
+      <DisplayAll good={good} neutral={neutral} bad={bad} />
+      <DisplayAvg good={good} neutral={neutral} bad={bad} />
+      <DisplayPos good={good} neutral={neutral} bad={bad} />
     </div>
   );
 };
