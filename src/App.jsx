@@ -17,7 +17,7 @@ const Button = (props) => (
 );
 
 const StatisticLine = (props) => (
-  <p>{props.text} {props.value} {props.sign}</p>
+  <tr><td>{props.text}</td><td></td><td></td><td>{props.value} {props.sign}</td></tr>
 );
 
 const App = () => {
