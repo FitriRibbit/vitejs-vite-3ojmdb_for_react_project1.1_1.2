@@ -13,7 +13,7 @@ const Button = (props) => (
 const MostVotes = (props) => (
   <div>
     <div>{props.anecdotes} </div>
-    <div>has {props.max} votes</div>
+    <div>has <b>{props.max}</b> votes</div>
   </div>
 );
 
@@ -43,11 +43,22 @@ const App = () => {
   };
 
   const max = Math.max(...points);
+  const index = points.indexOf(max);
+
   if (max === 0) {
-    <p>There still 0 vote</p>
-  } 
-    const index = points.indexOf(max);
-  
+    return (
+      <div>
+        <h1>Anecdote Of The Day</h1>
+        <Display selected={anecdotes[selected]} />
+        <Display text1="has" selected={points[selected]} text2="votes" />
+        <Button handleClick={handleVote} text="vote" />
+        <nbsp /> <nbsp />
+        <Button handleClick={handleAnecdote} text="next anecdote" />
+        <h1>Anecdote With The Most Votes</h1>
+        <p>There are still <b>0</b> vote</p>
+      </div>
+    );
+  } else {  
   return (
     <div>
       <h1>Anecdote Of The Day</h1>
@@ -60,6 +71,7 @@ const App = () => {
       <MostVotes anecdotes={anecdotes[index]} max={max} />
     </div>
   );
+  };
 };
 
 export default App;
