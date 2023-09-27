@@ -9,8 +9,8 @@ Currently, two official plugins are available:
 
   <h1>TASK 1.1 - 1.5 </h1>
   <a href=https://github.com/FitriRibbit/vitejs-vite-3ojmdb_openfullstack_lesson_react_1.1_1.2/tree/main>1.1-1.5</a>
-<h1>TASK 1.6 - 1.11 </h1>
+  <h1>TASK 1.6 - 1.11 </h1>
   <a href=https://github.com/FitriRibbit/vitejs-vite-3ojmdb_openfullstack_lesson_react_1.1_1.2/tree/task_1.6-1.11>1.6-1.11</a>
-<h1>TASK 1.12 - 1.14 </h1>
+  <h1>TASK 1.12 - 1.14 </h1>
   <a href=https://github.com/FitriRibbit/vitejs-vite-3ojmdb_openfullstack_lesson_react_1.1_1.2/tree/task_1.12-1.14>1.12-1.14</a>
 
